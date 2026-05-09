@@ -19,7 +19,7 @@ No server, no build step, no install required.
 
 ## Git & GitHub Workflow
 
-All changes must be committed with clean messages and pushed to `https://github.com/sevak-epam/browser-games` after every meaningful change.
+**Commit and push after every meaningful unit of work** — a new feature, a bug fix, a gameplay tweak. Never leave the session with uncommitted changes. The goal is that the GitHub repo always reflects a working, recoverable state.
 
 ```bash
 git add <file>
@@ -27,7 +27,9 @@ git commit -m "descriptive message"
 git push
 ```
 
-Commit granularity: one logical change per commit (e.g. "add enemy health bars", not "various fixes").
+Commit granularity: one logical change per commit (e.g. "add enemy health bars", not "various fixes"). Commit messages should be imperative, specific, and describe *what changed and why* — not just "update shooter.html".
+
+When in doubt, commit more often rather than less. If a long task is in progress, commit stable checkpoints along the way (e.g. after adding a feature even if polish is still pending).
 
 ## Architecture
 
